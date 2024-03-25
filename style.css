@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+div.attribution {
+    display: none;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: hsl(213, 44%, 95%);
+    padding: 6.3rem;
+    height: auto;
+    /*a changer  */
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 1.7em;
+    height: 37rem;
+    /* a changer  */
+}
+
+body>main>div {
+    display: block;
+    padding: 2.25em;
+    border-radius: 10px;
+    width: auto;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    box-shadow: 5px 5px 70px rgba(0, 0, 0, 0.158);
+}
+
+/* reglage container */
+
+/*  */
+
+div.nom {
+    display: flex;
+}
+
+div.nom div {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 13px;
+}
+
+div.nom div p {
+    font-weight: 500;
+}
+
+main div h2 {
+    text-align: start;
+    font-size: 1.4em;
+    margin-top: 2.42vh;
+    margin-bottom: 2.42vh;
+}
+
+body main div p:not(:first-child) {
+    text-align: start;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 18px;
+    opacity: 70%;
+}
+
+/*  */
+
+div.cont1 {
+    background-color: hsl(263, 55%, 52%);
+    grid-area: 1/1/2/3;
+    color: white;
+    background-image: url(/frontendmentor/testimonials-grid-section-main/images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position-x: 81%;
+    background-size: 22%;
+}
+
+div.cont2 {
+    background-color: hsl(217, 19%, 35%);
+    grid-area: 1 / 3 / 2 / 4;
+    color: white;
+}
+
+div.cont3 {
+    background-color: hsl(0, 0%, 100%);
+    grid-area: 2 / 1 / 3 / 2;
+    color: hsl(215, 11%, 34%);
+}
+
+
+div.cont4 {
+    background-color: hsl(219, 29%, 14%);
+    grid-area: 2/2/3/4;
+    color: white;
+}
+
+div.cont5 {
+    background-color: hsl(0, 0%, 100%);
+    grid-area: 1/4/3/5;
+    color: hsl(215, 11%, 34%);
+}
+
+p.un {
+    font-weight: 600;
+}
+
+/* reglage image */
+
+main div div img:first-of-type {
+    width: 2em;
+    border-radius: 50px;
+    border: solid 2.25px #b6b6b694;
+}
+
+main div div img:not(:first-child) {
+    position: relative;
+    z-index: 2;
+    height: 7.5em;
+}
+
+
+/* reglage */
+
+@media screen and (max-width: 375px) {
+
+    body {
+        padding: 20% 7%;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    main div div img:first-of-type {
+        width: 28px;
+        height: 28px;
+        border-radius: 50px;
+        border: solid 2.25px #b6b6b694;
+    }
+
+    main div h2 {
+        text-align: start;
+        font-size: 2.9vh;
+        margin-top: 1.42vh;
+        margin-bottom: 2.42vh;
+    }
+
+    main div div div {
+        font-size: 13px;
+        font-weight: 500;
+    }
+
+    div.cont1 {
+        background-size: 32%;
+        background-position-x: 90%;
+    }
+
+    main div{
+        box-shadow: none;
+    }
+
+
+}
