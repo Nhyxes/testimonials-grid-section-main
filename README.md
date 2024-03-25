@@ -1,4 +1,4 @@
-# Frontend Mentor - Testimonials grid section
+# Frontend Mentor - Testimonials grid section 1440px
 
 ![Design preview for the Testimonials grid section coding challenge](./design/desktop-preview.jpg)
 
